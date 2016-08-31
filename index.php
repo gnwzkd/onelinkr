@@ -106,7 +106,7 @@ function is_ajax(){
         }
     </script>
 </head>
-<body>
+<body class="container">
     <input type="text" placeholder="ResourceID">
     <button  class="waves-effect waves-light btn" type="submit">提交</button>
     <ul class="collection"></ul>
