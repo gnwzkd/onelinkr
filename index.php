@@ -81,7 +81,7 @@ function is_ajax(){
                             $filename=$(value).find("RelationshipName").html(),
                             $imgLinkCode="";
                             if(hasStr($filename,"jpg")||hasStr($filename,"png")||hasStr($filename,"gif")||hasStr($filename,"JPG")||hasStr($filename,"PNG")||hasStr($filename,"GIF")){
-                                $imgLinkCode="<br><img src='https://storage.live.com/items/"+$resid+":Thumbnail/"+$filename+"' alt='"+$filename+"'><br><textarea  class='materialize-textarea'>"+$("<div>").text('<a href="https://storage.live.com/items/'+$resid+':/'+$filename+'">'+'<img src="https://storage.live.com/items/'+$resid+':WebReady/'+$filename+'" alt="'+$filename+'"></a>').html()+"</textarea>";
+                                $imgLinkCode="<br><img src='https://storage.live.com/items/"+$resid+":Thumbnail/"+$filename+"' alt='"+$filename+"'><br><textarea  class='materialize-textarea'>"+$("<div>").text('<a href="https://storage.live.com/items/'+$resid+':/'+$filename+'" target="_blank">'+'<img src="https://storage.live.com/items/'+$resid+':WebReady/'+$filename+'" alt="'+$filename+'"></a>').html()+"</textarea>";
                             }
                             if($type=="Folder"){
                                 $ul.prepend("<li class='collection-item folder'><a href='javascript:void(0);' onclick="+$("<div>").text("$('input').val('"+$resid+"');$('button').click();").html()+"><i class='material-icons'>folder</i>"+$filename+"</a></li>");
